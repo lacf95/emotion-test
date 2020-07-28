@@ -1,6 +1,6 @@
 import { css } from '@emotion/core';
 
-const buttonStyle = css`
+const defaultStyle = css`
   font-size: 16px;
   background-color: #0288d1;
   color: white;
@@ -23,7 +23,7 @@ const buttonStyle = css`
   }
 `;
 
-const secondaryButtonStyle = css`
+const secondaryStyle = css`
   background-color: #616161;
 
   &:hover {
@@ -41,6 +41,6 @@ const secondaryButtonStyle = css`
 `;
 
 export {
-  buttonStyle as default,
-  secondaryButtonStyle
+  defaultStyle as default,
+  secondaryStyle
 };
