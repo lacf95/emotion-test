@@ -1,4 +1,5 @@
 import { css } from '@emotion/core';
+import { mq } from '../../style';
 
 const defaultStyle = css`
   font-size: 16px;
@@ -8,6 +9,10 @@ const defaultStyle = css`
   border-radius: 5px;
   border: 0;
   cursor: pointer;
+
+  ${mq.sm} {
+    width: 100%;
+  }
 
   &:hover {
     background-color: #005b9f;
