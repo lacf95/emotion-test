@@ -3,11 +3,13 @@ import 'core-js/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './components/App';
+
 const appWrapper = document.getElementById('app');
 
 if (appWrapper) {
   ReactDOM.render(
-    React.createElement('h1', {}, 'Hello, world!'),
+    React.createElement(App),
     appWrapper
   );
 }
