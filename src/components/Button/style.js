@@ -28,20 +28,21 @@ const defaultStyle = css`
   }
 `;
 
-const secondaryStyle = css`
-  background-color: #616161;
+const secondaryStyle = theme => css`
+  color: ${theme.colors.secondary.contrast};
+  background-color: ${theme.colors.secondary.default};
 
   &:hover {
-    background-color: #373737;
+    background-color: ${theme.colors.secondary.darker};
   }
 
   &:active {
-    background-color: #616161;
+    background-color: ${theme.colors.secondary.lighter};
   }
 
   &:disabled {
     cursor: not-allowed;
-    background-color: #8e8e8e;
+    background-color: ${theme.colors.secondary.lighter};
   }
 `;
 
